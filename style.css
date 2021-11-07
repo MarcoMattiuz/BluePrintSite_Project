@@ -1,0 +1,77 @@
+:root{
+    --ebony: #0A0708;
+    --coolGray: #444444;
+    --gray: #747474;
+    --grayOP: #747474a9;
+    --ligthGray: #B1B1B1;
+    --ligthGrayOP: #b1b1b1b6;
+}
+body{
+    background: radial-gradient(circle at 100%, var(--ebony),var(--coolGray));
+    display: flex;
+    justify-content: center;
+}
+header{
+    position: fixed;
+    display: flex;
+    background: var(--grayOP);
+    width: 98%;
+    height: 50px;
+    justify-content: end;
+    align-items: center;
+    border-radius: 5px;
+}
+
+a{text-decoration: none;}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-element1{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    margin-left: 5px;
+
+    border-radius: 5px;
+    border-right: 2px solid var(--ligthGrayOP);
+    border-left: 2px solid var(--ligthGrayOP);
+}
+
+.nav-element2{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    margin-left: 5px;
+
+    border-radius: 5px;
+    border-right: 2px solid var(--ligthGrayOP);
+    border-left: 2px solid var(--ligthGrayOP);
+}
+
+.nav-element3{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    margin-left: 5px;
+    
+    border-radius: 5px;
+    border-right: 2px solid var(--ligthGrayOP);
+    border-left: 2px solid var(--ligthGrayOP);
+    margin-right: 5px;
+}
+
+.nav-text{
+    color: var(--coolGray);
+    font-family: 'Share Tech', sans-serif;
+    
+        font-size: 25px;
+}
+
+
+
+
