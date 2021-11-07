@@ -1,0 +1,19 @@
+{
+  "name": "blueprint_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoMattiuz/BluePrintSite_Project.git"
+  },
+  "author": "MarcoMattiuz&LashkibaLorenzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcoMattiuz/BluePrintSite_Project/issues"
+  },
+  "homepage": "https://github.com/MarcoMattiuz/BluePrintSite_Project#readme"
+}
