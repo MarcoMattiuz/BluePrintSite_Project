@@ -1,5 +1,7 @@
 :root{
-    --ebony: #0A0708;
+    --ebonyOP: rgba(10, 7, 8, 0.7);
+    --ebony: rgba(10, 7, 8, 1);
+    --coolGrayOP: #444444ea;
     --coolGray: #444444;
     --gray: #747474;
     --grayOP: #747474a9;
@@ -7,7 +9,7 @@
     --ligthGrayOP: #b1b1b1b6;
 }
 body{
-    background: radial-gradient(circle at 100%, var(--ebony),var(--coolGray));
+    background:#2a2d32f8;
     display: flex;
     justify-content: center;
 }
@@ -72,6 +74,22 @@ nav{
         font-size: 25px;
 }
 
+#element{
+    position: absolute;
+    background: #2a2d32f8;
+    width: 200px;
+    height: 200px;
+
+    top: 400px;
+    left: 100px;
+
+    border-radius: 20px;
+
+    box-shadow: 
+    inset 5px  5px 8px 8px  rgba(0, 0, 0, 0.1),
+    inset -5px  -5px 8px 8px  rgba(0, 0, 0, 0.1);
+ 
+}
 
 
 
