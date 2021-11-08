@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 :root {
   --ebonyOP: rgba(10, 7, 8, 0.7);
   --ebony: rgba(10, 7, 8, 1);
@@ -7,6 +9,7 @@
   --grayOP: #747474a9;
   --ligthGray: #b1b1b1;
   --ligthGrayOP: #b1b1b1b6;
+  --textWhite: #dfdfdf;
 }
 body {
   background: #2a2d32f8;
@@ -15,10 +18,9 @@ body {
 }
 header {
   display: flex;
-  background: #2a2d32f8;
   width: 85%;
   height: 50px;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   padding: 15px;
@@ -27,60 +29,21 @@ header {
   margin-top: 15px;
 }
 .container_text {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
 }
-h1 {
-  position: fixed;
-
-  right: 20px;
-  color: var(--coolGray);
-  font-family: "Share Tech", sans-serif;
-
-  font-size: 30px;
+.container_logo {
+  font-family: "Poiret One", cursive;
+  font-size: 11px;
+  margin: 1rem;
+  color: var(--textWhite);
 }
+.item {
+  margin: 1rem;
+  color: var(--textWhite);
+}
+
 a {
   text-decoration: none;
-}
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-element1 {
-  display: flex;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-  height: 40px;
-  margin-left: 5px;
-
-  border-right: 2px solid var(--ligthGrayOP);
-}
-
-.nav-element2 {
-  display: flex;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-  height: 40px;
-  margin-left: 5px;
-
-  border-right: 2px solid var(--ligthGrayOP);
-}
-
-.nav-element3 {
-  display: flex;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-  height: 40px;
-  margin-left: 5px;
-}
-
-.nav-text {
-  color: var(--coolGray);
-  font-family: "Share Tech", sans-serif;
-
-  font-size: 25px;
 }
 
 #img-container {
