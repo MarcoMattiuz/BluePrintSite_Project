@@ -102,7 +102,7 @@ nav{
     width: 48%;
     height: 200px;
 
-    top: 800px;
+    top: 850px;
     
 
     border-radius: 20px;
@@ -114,14 +114,15 @@ nav{
 }
 
 #left{
-    position: absolute;
     left: 10px;
 }
 
 #right{
-    position: absolute;
     right: 10px;
 }
+
+
+
 
 
 
