@@ -1,128 +1,133 @@
-:root{
-    --ebonyOP: rgba(10, 7, 8, 0.7);
-    --ebony: rgba(10, 7, 8, 1);
-    --coolGrayOP: #444444ea;
-    --coolGray: #444444;
-    --gray: #747474;
-    --grayOP: #747474a9;
-    --ligthGray: #B1B1B1;
-    --ligthGrayOP: #b1b1b1b6;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+:root {
+  --ebonyOP: rgba(10, 7, 8, 0.7);
+  --ebony: rgba(10, 7, 8, 1);
+  --coolGrayOP: #444444ea;
+  --coolGray: #444444;
+  --gray: #747474;
+  --grayOP: #747474a9;
+  --ligthGray: #b1b1b1;
+  --ligthGrayOP: #b1b1b1b6;
+  --textWhite: #dfdfdf;
+  --backGroundBlack: #2a2d32f8;
 }
-body{
-    background:#2a2d32f8;
-    display: flex;
-    justify-content: center;
+body {
+  background: var(--backGroundBlack);
+  display: flex;
+  justify-content: center;
 }
-header{
+/* ---- for navbar ---- */
+header {
+  display: flex;
+  width: 85%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1),
+    3px 3px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+}
+.container_text {
+  font-family: "Poppins", sans-serif;
+}
+.container_logo {
+  font-family: "Poiret One", cursive;
+  font-size: 11px;
+  margin: 1rem;
+  color: var(--textWhite);
+}
+
+.subtitles{
+    font-family: "Poiret One", cursive;
+    text-align: end;
+    padding-right: 25px;
+    font-size: 20px;
+}
+#projects-working{
+    text-align: center;
+}
+.item {
+  margin: 1rem;
+  color: var(--textWhite);
+}
+
+a {
+  text-decoration: none;
+}
+/* ---------------- */
+
+#img-container {
+  position: absolute;
+  margin-top: 7rem;
+  width: 80%;
+}
+#img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.element {
+  position: fixed;
+  background: var(--backGroundBlack);
+  width: 38%;
+  height: 200px;
+
+  top: 720px;
+
+  border-radius: 20px;
+
+  box-shadow: inset 4px 4px 8px 8px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.big-element {
     position: fixed;
-    display: flex;
-    background: #2a2d32f8;
-    width: 98%;
-    height: 50px;
-    justify-content: start;
-    align-items: center;
-    border-radius: 5px;
-
-    box-shadow: 
-    inset 4px  4px 8px 8px  rgba(0, 0, 0, 0.1),
-    inset -4px  -4px 8px 8px  rgba(0, 0, 0, 0.1);
-}
-h1{
-    position: fixed;
-
-    right: 20px;
-    color: var(--coolGray);
-    font-family: 'Share Tech', sans-serif;
-    
-        font-size: 30px;
-}
-a{text-decoration: none;}
-nav{
-    display: flex;
-    align-items: center;
-}
-
-.nav-element1{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    height: 40px;
-    margin-left: 5px;
-
-  
-    border-right: 2px solid var(--ligthGrayOP);
-    
-}
-
-.nav-element2{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    height: 40px;
-    margin-left: 5px;
-
-    
-    border-right: 2px solid var(--ligthGrayOP);
-    
-}
-
-.nav-element3{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    height: 40px;
-    margin-left: 5px;
-    
-}
-
-.nav-text{
-    color: var(--coolGray);
-    font-family: 'Share Tech', sans-serif;
-    
-        font-size: 25px;
-}
-
-#img-container{
-    position: fixed;
-    left: 10px;
-    top: 90px;
-    width: 90%;
-    
-}
-#img{
-    position: fixed;
-    max-width:100%;
-    max-height:100%;
-    object-fit: contain;
-
-}
-.element{
-    position: fixed;
-    background: #2a2d32f8;
-    width: 48%;
+    background: var(--backGroundBlack);
+    width: 80%;
     height: 200px;
+  
+    top: 970px;
+  
+    border-radius: 20px;
+  
+    box-shadow: inset 4px 4px 8px 8px rgba(0, 0, 0, 0.1),
+      inset -4px -4px 8px 8px rgba(0, 0, 0, 0.1);
+  }
+#left {
+  position: absolute;
+  left: 6em;
+}
 
-    top: 850px;
-    
+#right {
+  position: absolute;
+  right: 6em;
+}
 
+
+/* scrollBar personalizzata */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--backGroundBlack); 
     border-radius: 20px;
 
-    box-shadow: 
-    inset 4px  4px 8px 8px  rgba(0, 0, 0, 0.1),
-    inset -4px  -4px 8px 8px  rgba(0, 0, 0, 0.1);
- 
-}
+    box-shadow: inset 2px 2px 4px 4px rgba(0, 0, 0, 0.2),
+      inset -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--coolGray); 
+    border-radius: 20px;
+  }
 
-#left{
-    left: 10px;
-}
-
-#right{
-    right: 10px;
-}
-
-
-
-
-
-
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gray); 
+    border-radius: 20px;
+  }
