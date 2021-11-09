@@ -6,7 +6,7 @@
   --ebony: rgba(10, 7, 8, 1);
   --coolGrayOP: #444444ea;
   --coolGray: #444444;
-  --gray: #747474;
+  --gray: #16171af8;
   --grayOP: #747474a9;
   --ligthGray: #b1b1b1;
   --ligthGrayOP: #b1b1b1b6;
@@ -14,16 +14,14 @@
   --backGroundBlack: #2a2d32f8;
 }
 
-
 body {
   background: var(--gray);
   display: flex;
- 
+
   justify-content: center;
 }
 
-.backGround{
-  border-radius: 10px ;
+.backGround {
   background: var(--backGroundBlack);
   display: flex;
   height: 100vh;
@@ -42,6 +40,7 @@ header {
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1),
     3px 3px 10px rgba(0, 0, 0, 0.5);
   margin-top: 15px;
+  z-index: 99999;
 }
 .nav-bar {
   font-family: "Poppins", sans-serif;
@@ -54,31 +53,20 @@ header {
 }
 /****************/
 
-/* --- content home --- */
-.title{
-  position: relative;
-  font-family: "Poiret One", cursive;
-  font-size: 40px;
-  text-align: center ;
-  color: var(--textWhite);
-
-  width: 300px;
-  height: 150px;
-}
 /***************************/
-.presentation{
-  width: 300px;
+.presentation {
   position: relative;
   font-family: "Poiret One", cursive;
-  font-size: 20px;
+  text-align: center;
+  font-size: 2.3vw;
   color: var(--textWhite);
-  height: 200px;
+  width: 30%;
 }
-.subtitles{
-    font-family: "Poiret One", cursive;
-    text-align: end;
-    padding-right: 25px;
-    font-size: 20px;
+.subtitles {
+  font-family: "Poiret One", cursive;
+  text-align: end;
+  padding-right: 25px;
+  font-size: 20px;
 }
 
 .item {
@@ -91,26 +79,40 @@ header {
   color: var(--ligthGray);
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 /* ---------------- */
-
-#img-container {
+#bluePrintImage {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  top: 10vh;
-  width: 80vw;
-  height: 70vh;
-  background: no-repeat center/95% url("test-img.png");
+  margin-top: 8em;
+  width: 90%;
+  opacity: 0.4;
+  max-width: 1100px;
 }
 
-#img{
-  width: 100vw;
-  height: 100vh;
+#presentation_container {
+  position: absolute;
+  margin-top: 9rem;
+  text-align: center;
+  width: 50%;
 }
-
+#presentation_container > h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 5vw;
+  color: var(--textWhite);
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+#presentation_container > p {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  font-size: 2.3vw;
+  color: var(--textWhite);
+}
 .element {
   position: relative;
   background: var(--backGroundBlack);
@@ -135,27 +137,25 @@ a {text-decoration: none;}
   right: 6em;
 }
 
-
 /* scrollBar personalizzata */
 ::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: var(--backGroundBlack); 
-    border-radius: 10px;
+  width: 15px;
+}
 
-    box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.2),
-      inset -1px -1px 2px 2px rgba(255, 255, 255, 0.2);
-  }
-   
-  ::-webkit-scrollbar-thumb {
-    background: var(--coolGray); 
-    border-radius: 10px;
-  }
+::-webkit-scrollbar-track {
+  background: var(--backGroundBlack);
+  border-radius: 10px;
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--ebonyOP); 
-    border-radius: 20px;
-  }
+  box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 2px 2px rgba(255, 255, 255, 0.2);
+}
 
+::-webkit-scrollbar-thumb {
+  background: var(--coolGray);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ebonyOP);
+  border-radius: 20px;
+}
