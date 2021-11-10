@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-
 :root {
   --ebonyOP: rgba(10, 7, 8, 0.7);
   --ebony: rgba(10, 7, 8, 1);
@@ -16,86 +15,109 @@
 
 body {
   background: var(--gray);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
 
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.container {
   height: 100%;
-  scroll-snap-type: y mandatory;
+  width: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
-.backGround {
+section {
   height: 100vh;
   width: 90vw;
-  scroll-snap-align: start;
-}
-section{
-  display: flex;
-  justify-content: center;
+  margin: 0 5vw 0 5vw;
   background: var(--backGroundBlack);
-  height: 100vh;
-  width: 90vw;
-  
+  scroll-snap-align: start;
+  padding-top: 2vh;
+  border-left: 1vh var(--backGroundBlack) solid;
+  border-right: 1vh var(--backGroundBlack) solid;
+  border-bottom: 0.5vh var(--backGroundBlack) solid;
+  -webkit-box-shadow: inset -2px -2px 10px rgba(255, 255, 255, 0.1), inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -2px -2px 10px rgba(255, 255, 255, 0.1), inset 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+section:nth-of-type(1) {
+  border-radius: 10px 10px 0 0;
+  border-top: 1vh var(--backGroundBlack) solid;
+}
+
+section:nth-of-type(2) {
+  border-top: 0.5vh var(--backGroundBlack) solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 /* ---- for navbar ---- */
-
-header{
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 85%;
-  height: 5vw;
-  
-
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  margin-top: 3vh;
-
+  width: 90%;
+  height: 5vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  margin: auto;
   border-radius: 10px;
-  
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1),
-    3px 3px 10px rgba(0, 0, 0, 0.5);
-  
- 
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
+
 .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Poppins", sans-serif;
-  border-radius: 10px;
-  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, 0.1),
-  inset 3px 3px 10px rgba(0, 0, 0, 0.5);
-  
-
 }
-
 
 .item {
-  margin: 1rem;
+  margin: 1em;
+  font-size: 1.050em;
   color: var(--textWhite);
 }
 
 .item:hover {
-  margin: 1rem;
-  color: var(--ligthGray);
+  margin: 1em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcc445));
+  background-image: linear-gradient(90deg, #833ab4, #fd1d1d, #fcc445);
+  -webkit-background-clip: text;
+  color: transparent;
   border-radius: 10px;
 }
 
 .container_logo {
-  font-family: "Poiret One", cursive;
   font-size: 11px;
   margin: 1rem;
-  padding: 0.4em;
-  border-radius: 10px;
-  color: var(--textWhite);
-  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, 0.1),
-   inset 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
-/****************/
 
+.logo {
+  background-image: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcc445));
+  background-image: linear-gradient(90deg, #833ab4, #fd1d1d, #fcc445);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.3em;
+  font-family: "Poiret One",cursive;
+}
+
+/****************/
 /***************************/
 .presentation {
   position: relative;
@@ -105,6 +127,7 @@ header{
   color: var(--textWhite);
   width: 30%;
 }
+
 .subtitles {
   font-family: "Poiret One", cursive;
   text-align: end;
@@ -112,27 +135,31 @@ header{
   font-size: 1.2em;
 }
 
+a {
+  text-decoration: none;
+}
 
-
-
-
-a {text-decoration: none;}
 /* ---------------- */
-.img-div-Talos{
-  margin: 0;
-  position: absolute;
-  margin-top: 8em;
-  width: 80%;
-  opacity: 0.4;
-  max-width: 80vw;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1),
-    3px 3px 10px rgba(0, 0, 0, 0.5);
+.img-div-Talos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh auto;
+  width: 900px;
+  height: 700px;
+  background-image: url(test-img.png);
+  background-position: center;
+  background-size: 100%;
+  opacity: .8;
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
-#bluePrintTalos {
-  width: 100%;
-  height: 100%;
-}
-
 
 #presentation_container {
   position: absolute;
@@ -140,57 +167,52 @@ a {text-decoration: none;}
   text-align: center;
   width: 50%;
 }
+
 #presentation_container > h2 {
   font-family: "Poiret One", cursive;
   font-size: 5vw;
   color: var(--textWhite);
 }
+
 @media (min-width: 600px) {
   h2 {
     font-size: 60px;
   }
 }
+
 #presentation_container > p {
   font-family: "Poiret One", cursive;
   text-align: center;
   font-size: 2.3vw;
   color: var(--textWhite);
 }
+
 .element {
-  position: relative;
   background: var(--backGroundBlack);
-  width: 38%;
-  height: 200px;
-
-  margin-top: 0vh;
-
   border-radius: 10px;
-
-  box-shadow: inset 5px 5px 8px 8px rgba(0, 0, 0, 0.1),
-    inset -5px -5px 8px 8px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 5px 5px 8px 8px rgba(0, 0, 0, 0.1), inset -5px -5px 8px 8px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 8px 8px rgba(0, 0, 0, 0.1), inset -5px -5px 8px 8px rgba(255, 255, 255, 0.1);
 }
 
 #left {
-  position: absolute;
-  left: 6em;
+  width: 45%;
+  height: 20rem;
+  margin-top: 5em;
 }
 
 #right {
-  position: absolute;
-  right: 6em;
+  width: 45%;
+  height: 20rem;
+  margin-top: 5em;
 }
 
 /* scrollBar personalizzata */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 1.5vw;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--backGroundBlack);
-  border-radius: 10px;
-
-  box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.2),
-    inset -1px -1px 2px 2px rgba(255, 255, 255, 0.2);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -200,5 +222,13 @@ a {text-decoration: none;}
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ebonyOP);
-  border-radius: 20px;
 }
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-button {
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */
