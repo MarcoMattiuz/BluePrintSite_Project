@@ -18,6 +18,12 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  -webkit-animation-name: backAnimation;
+          animation-name: backAnimation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .container {
@@ -90,7 +96,7 @@ header {
 
 .item {
   margin: 1em;
-  font-size: 1.050em;
+  font-size: 1.8vw;
   color: var(--textWhite);
 }
 
@@ -104,7 +110,6 @@ header {
 }
 
 .container_logo {
-  font-size: 11px;
   margin: 1rem;
 }
 
@@ -113,7 +118,7 @@ header {
   background-image: linear-gradient(90deg, #833ab4, #fd1d1d, #fcc445);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2.3em;
+  font-size: 2.5vw;
   font-family: "Poiret One",cursive;
 }
 
@@ -151,9 +156,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 5vh auto;
-  width: 900px;
-  height: 700px;
-  background-image: url(test-img.png);
+  background-image: url(images/test-img.png);
   background-position: center;
   background-size: 100%;
   opacity: .8;
@@ -161,6 +164,35 @@ a {
           box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 100px) {
+  .img-div-Talos {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 850px) {
+  .img-div-Talos {
+    width: 700px;
+    height: 520px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-div-Talos {
+    width: 900px;
+    height: 700px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .img-div-Talos {
+    width: 1100px;
+    height: 800px;
+  }
+}
+
+/*****************/
 #presentation_container {
   position: absolute;
   margin-top: 9rem;
@@ -172,12 +204,6 @@ a {
   font-family: "Poiret One", cursive;
   font-size: 5vw;
   color: var(--textWhite);
-}
-
-@media (min-width: 600px) {
-  h2 {
-    font-size: 60px;
-  }
 }
 
 #presentation_container > p {
@@ -208,7 +234,7 @@ a {
 
 /* scrollBar personalizzata */
 ::-webkit-scrollbar {
-  width: 1.5vw;
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
@@ -231,4 +257,4 @@ a {
 ::-webkit-scrollbar-button {
   background: transparent;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
